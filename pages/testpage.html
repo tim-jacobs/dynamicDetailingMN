@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#myButton').click(function() {
+        $('#myText').text('Hello from jQuery!');
+      });
+    });
+  </script>
+  <style>
+    .content {
+      display: none;
+      padding: 10px;
+      border: 1px solid #ccc;
+      margin-top: 5px;
+    }
+    .header {
+      background-color: #f0f0f0;
+      padding: 10px;
+      cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+  <p id="myText">Click the button to change this text.</p>
+  <button id="myButton">Click Me</button>
+  <div class = "container">
+    <div class="header">Section 1</div>
+    <div class="content">Content for section 1.</div>
+  
+    <div class="header">Section 2</div>
+    <div class="content">Content for section 2.</div>
+  
+    <div class="header">Section 3</div>
+    <div class="content">Content for section 3.</div>
+  </div>
+  <p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<ol>
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>List item 3</li>
+</ol>
+
+<button id="btn1">Append text</button>
+<button id="btn2">Append list items</button>
+  
+  <script>
+  $(document).ready(function(){
+    $(".header").click(function(){
+      $(this).next(".content").slideToggle();
+    });
+  });
+  </script>
+  <script>
+    $(document).ready(function(){
+      $("#btn1").click(function(){
+        $("p").append(" <b>Appended text</b>.");
+      });
+    
+      $("#btn2").click(function(){
+        $("ol").append("<li>Appended item</li>");
+      });
+    });
+    </script>
+</body>
+</html>
+
