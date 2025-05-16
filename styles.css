@@ -83,7 +83,8 @@ a {
 }
 
 a:hover {
-  color: #5dbf1e;
+  border-color: #429D76;
+  color: #429D76;
   text-decoration: none;
 }
 
@@ -124,6 +125,7 @@ a.whiteText:hover {
 
 .btn.btnPrim:hover {
   background-color: transparent;
+  border-color: #000;
   color: #000;
 }
 
@@ -136,6 +138,7 @@ a.whiteText:hover {
 .btn.btnSeco:hover {
   /*background-color: #44a207;*/
   background-color: transparent;
+  border-color: #5dbf1e;
   color: #5dbf1e;
 }
 
@@ -147,6 +150,7 @@ a.whiteText:hover {
 
 .btn.btnTert:hover {
   background-color: black;
+  border-color: #000;
   color: #fff;
 }
 
